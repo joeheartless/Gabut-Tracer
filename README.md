@@ -22,19 +22,30 @@ A lightweight Python-based network traceroute utility with support for:
 pip install scapy rich geoip2 maxminddb jinja2 asn
 ```
 
-### GeoLite2 Databases
+## GeoLite2 Database
 
-Place the following databases inside the `data/` directory:
+Gabut-Tracer uses the **MaxMind GeoLite2 City** and **GeoLite2 ASN** databases to provide IP geolocation and Autonomous System Number (ASN) information.
 
-```
+These database files are **not included** in this repository.
+
+Please download the following databases from the official MaxMind website:
+
+- **GeoLite2-City.mmdb**
+- **GeoLite2-ASN.mmdb**
+
+https://dev.maxmind.com/geoip/geolite2-free-geolocation-data/
+
+After downloading, place both files in the `data/` directory:
+
+```text
 data/
 ├── GeoLite2-City.mmdb
 └── GeoLite2-ASN.mmdb
 ```
 
-These databases can be obtained from MaxMind.
-
----
+> **Note**
+>
+> A free MaxMind account is required to download the GeoLite2 databases.
 
 ## Project Structure
 
