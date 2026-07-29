@@ -50,7 +50,7 @@ data/
 ## Project Structure
 
 ```
-NetTraceX/
+Gabut-Tracer/
 │
 ├── main.py
 ├── tracer.py
